@@ -1,0 +1,16 @@
+
+.footer{
+    background-image: -webkit-linear-gradient(0deg, #D3472C 0%,   #D3472C 100%);
+    align-items: center;
+    color: wheat;
+  margin-top:-1rem;
+    display: flex;
+    padding: 0,5rem;
+    justify-content: space-evenly;
+    flex-direction: row;  
+  
+}
+
+.footer p{
+    color: white;
+}

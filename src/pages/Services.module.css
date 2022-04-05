@@ -1,0 +1,86 @@
+
+body{
+    background-color: white;
+}
+
+.content{
+    animation: transitionIn 4s;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:3rem;
+   
+}
+.styled{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem;
+}
+.styled span{
+    font-size: 3rem;
+    font-weight: bold;
+    display: inline;
+}
+
+ .haircut img,.coloring img,.straighten img,.extensions img{
+    transition: 1s;
+    filter:grayscale(1);
+  
+}  
+.haircut:hover img , .coloring:hover img,.straighten:hover img,.extensions:hover img{
+    opacity: 0.8;
+    filter:grayscale(0);
+}  
+
+.haircut,.straighten,.extensions,.coloring{
+     text-align: center;
+    transition:1s;
+    padding: 1rem;
+     background-color: whitesmoke;
+     margin: 1rem;
+    
+}
+
+
+
+
+.link{
+    width: 50%;
+}
+
+
+@media screen and (max-width: 800px) {
+   
+    .services{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding:0;
+       
+    }
+    .link{
+        width: 90%;
+    }
+    
+ .haircut img,.coloring img,.straighten img,.extensions img{
+    transition: 1s;
+    filter:grayscale(0);
+  
+}  
+  }

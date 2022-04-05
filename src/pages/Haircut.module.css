@@ -1,0 +1,60 @@
+body{
+    background-color: white;
+  }
+.content{
+    animation: transitionIn 4s;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.styled{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem;
+}
+
+.textAndSlider{
+    
+display:flex;
+flex-direction: row;
+justify-content: space-evenly;
+margin-bottom: 2rem;
+margin-top: 5rem;
+
+}
+.textArea{
+    width: 50%;
+    
+    margin-left:2rem;
+}
+
+.sliderArea{
+    width: 50%;
+    padding:2rem;
+   
+}
+@media screen and (max-width: 1000px) {
+    .textAndSlider{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        }
+        .sliderArea{
+            width: 100%;
+            padding-top:2rem;
+        }
+        .textArea{
+            width: 100%;
+            margin:0;
+        }
+  }

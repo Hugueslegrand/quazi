@@ -1,0 +1,157 @@
+
+.content{
+    animation: transitionIn 4s;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.loader{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.slideTitle,.slideText{
+    width: 100%;
+  height: 100%;
+  color: #d32c65;
+  font-size: 2rem;
+  position: absolute;
+  text-align: center;
+  top: 5%;
+  z-index: 10;
+  text-transform: uppercase;
+  font-weight:900;
+  font-family:papyrus,fantasy;
+
+}
+.slideText{
+    top: 35%;
+     font-family:papyrus,fantasy;
+    font-size: 2rem;
+}
+.homeBanner{
+      display:flex;
+      justify-content: center;
+      background-color: red;
+      margin-top: 4rem;
+}
+.homeBannerImg{
+    width: 100%;
+}
+.styled{
+    
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem;
+  }
+  .services{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+     
+  }
+  .serviceCard{
+      width: 50%;
+      padding: 2rem;
+      opacity: 0.9;
+  }
+  .serviceCard:hover{
+      opacity: 1;
+  }
+
+  .sliderBody {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.slider,
+.slider {
+    height: 350px;
+    margin: auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    width: 95%;
+}
+
+.sliderTrack {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.sliderTrack:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(calc(150px*11));
+    }
+    100% {
+        transform: translateX(calc(-350px*12));
+    }
+}
+/*
+@keyframes scroll {
+    0% {
+        transform: translateX(calc(150px*10));
+    }
+    100% {
+        transform: translateX(calc(-250px*10));
+    }
+}*/
+
+.slide {
+    height: 350px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.slider::before,
+.slider::after {
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before,
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+  @media screen and (max-width: 800px) {
+    .slideTitle,.slideText{
+      color: transparent;
+    
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+       
+    }
+    .serviceCard{
+        width: 100%;
+        padding: 2rem;
+        opacity: 1;
+    }
+  }

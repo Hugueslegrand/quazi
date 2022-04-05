@@ -1,0 +1,152 @@
+
+.header {
+    padding: 2rem;
+    background: radial-gradient(ellipse at 33% 50%, #f2df80, #f29544 133%);
+    display: flex;
+    
+    perspective: 10px;
+    perspective-origin: 2% 100%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-variation-settings: "wght" 700;
+    color: #D3472C;
+    text-shadow: 0.2rem 0.2rem 0 #f29544;
+}
+
+span {
+    font-size: 0.33em;
+    display: block;
+    letter-spacing: 0.1em;
+    text-shadow: 0.1rem 0.1rem 0 #f29544;
+}
+
+.title h2 {
+    font-size: 1rem;
+    font-variation-settings: "wght" 500;
+    color: #590c13;
+}
+
+.stars {
+    width: 45%;
+ 
+    
+    z-index: 9;
+    transform: translateZ(0);
+    
+}
+ .stara{
+  
+  border-radius: 50%;
+  position: absolute;
+  background: url(../assets/logo.jpg)  center center fixed;
+  right: 0;
+  transform: translateY(0) translateZ(0);
+  box-shadow: 0 0 16px 2px #f29544;
+  animation: deflate 3s ease-in-out alternate infinite;  
+  -moz-animation:inflatemoz 3s ease-in-out alternate infinite;  
+}
+
+ 
+.starb {
+  border-radius: 50%;
+  position: absolute;
+    background: linear-gradient(-15deg, #D3472C -66%, #D3472C);
+    transform: translateY(0) translateZ(0);
+    box-shadow: 0 0 16px 2px #f29544;
+    animation: inflate 3s ease-in-out alternate infinite;  
+    -moz-animation:inflatemoz 3s ease-in-out alternate infinite;  
+}
+
+  @media screen and (min-width: 769px) {
+    .stara{
+      width: 16rem;
+        height: 16rem;
+        top: "calc(50% - 10rem)";
+    }
+    .starb{
+      width: 8rem;
+        height: 8rem;
+        top: calc(50% - 6rem);
+    }
+      .header{
+    height: 28rem;
+    justify-content: space-between;
+    top: -25rem;
+}
+.stars{
+  height: 100%;
+}
+.title h2  {
+  border-top: 2px solid;
+  padding-top: 0.66rem;
+  margin-top: 1rem;
+}
+  }
+
+  @media screen and (max-width: 768px) {
+    .title  {
+      width: 50%;
+      height: 100%;
+      align-items: flex-start;
+    }
+      .header{
+    flex-direction: column;
+    align-items: center;
+    height: 32rem;
+    top: -29rem;}
+    .stars{
+      height:50%;
+    }
+    .title   {
+      width: 100%;
+      height: 40%;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  @keyframes inflate {
+    from {
+      transform: translateY(0) translateZ(0);
+    }
+    to {
+      transform: translateY(-20px) translateZ(20px);
+    }
+  }
+  
+  @keyframes deflate {
+    from {
+      transform: translateY(0) translateZ(0);
+    }
+    to {
+      transform: translateY(20px) translateZ(-20px);
+    }
+  }
+  
+  @keyframes inflatemoz {
+    from {
+      transform: translateY(0) translateZ(0);
+    }
+    to {
+      transform: translateY(-0.5px) translateZ(0.5px);
+    }
+  }
+  
+  @keyframes deflatemoz {
+    from {
+      transform: translateY(0) translateZ(0);
+    }
+    to {
+      transform: translateY(0.5px) translateZ(-0.5px);
+    }
+  }

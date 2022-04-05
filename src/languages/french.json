@@ -1,0 +1,29 @@
+{
+    "translation":{
+        "Home":"Accueil",
+        "Services":"Services",
+        "Gallery":"Galerie",
+        "About":"Sur nous",
+        "AboutSection1":"Salon de coiffure unique - Coiffure Euro-Africain ! En plus des traitements réguliers de coupe, coloration et balayage, nous sommes spécialisés dans les extensions, le traitement à la kératine et le lissage. Nous sommes passionnés par vos cheveux - la coiffure est notre passion !",
+        "Contact":"Contact",
+        "Haircut":"Couper",
+        "Coloring":"Colorer",
+        "Straighten":"Défriser",
+        "StraightenHome":"Lissage permanent, des cheveux bouclés aux cheveux définitivement lisses en quelques heures",
+        "Extensions":"Extensions",
+        "ExtensionsHome":"En tissant des extensions, profitez instantanément de cheveux longs et brillants, d'un volume supplémentaire dans vos cheveux ! Une vaste sélection d'extensions de cheveux brésiliens disponibles dans le salon! (cheveux excl)",
+        "Keratin":"Traitement à la kératine",
+        "KeratinHome":"Traitement pour cheveux abîmés, crépus ou secs, lissage pendant 3 à 6 mois avec des résultats immédiats, cheveux lisses et brillants en salon. Aucun post-traitement requis.",
+        "Name":"Nom",
+        "Email":"Email",
+        "PhoneNumber":"numero de telephone",
+        "Message":"Votre message",
+        "InTouch":"Rentrez en contact",
+        "Send":"Envoyer",
+        "Provide":"Ce que nous pouvons faire pour vous",
+        "ReadMore":"Savoir plus",
+        "Audience":"Pour femmes, hommes et enfants",
+        "Sent":"Votre message a été envoyé",
+        "Examples":"Quelques exemples"
+    }
+}
