@@ -1,6 +1,13 @@
 {
     "translation":{
         "Home":"Accueil",
+        "HairExtensions":"Extensions",
+        "HairPieces":"Postiches",
+        "Salon":"Salon",
+        "Prices":"Tarifs",
+        "Inspiration":"Inspiration",
+        "Consult":"Consult gratuite",
+        "Appointment":"Prendre rendez-vous",
         "Services":"Services",
         "Gallery":"Galerie",
         "About":"Sur nous",
@@ -24,6 +31,17 @@
         "ReadMore":"Savoir plus",
         "Audience":"Pour femmes, hommes et enfants",
         "Sent":"Votre message a été envoyé",
-        "Examples":"Quelques exemples"
+        "Examples":"Quelques exemples",
+        "Openings":"HORAIRES D'OUVERTURES",
+        "Monday":"Lundi",
+        "Tuesday":"Mardi",
+        "Wednesday":"Mecredi",
+        "Thursday":"Jeudi",
+        "Friday":"Vendredi",
+        "Saturday":"Samedi",
+        "Sunday":"Dimanche",
+        "Closed":"Fermé",
+        "Follow":"Suivez-nous",
+        "Cookie":"Cookie – Déclaration de confidentialité"
     }
 }

@@ -1,16 +1,104 @@
 
 .footer{
     background-image: -webkit-linear-gradient(0deg, #D3472C 0%,   #D3472C 100%);
-    align-items: center;
+   
     color: wheat;
   margin-top:-1rem;
     display: flex;
     padding: 0,5rem;
-    justify-content: space-evenly;
-    flex-direction: row;  
+   
+    flex-direction: column;  
   
+}
+
+.contactAndHours{
+ 
+  align-items: center;
+  color: white;
+
+  display: flex;
+  padding: 0,5rem;
+  justify-content: space-evenly;
+  flex-direction: row;  
 }
 
 .footer p{
     color: white;
+}
+
+.phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.route Button{
+  background: radial-gradient(ellipse at 33% 50%, #f2df80, #f29544 133%);
+}
+
+.followUs{
+  display: flex;
+  flex-direction:column;
+  margin-right: 1.92%;
+margin-left: 1.92%;
+padding-top: 15px !important;
+padding-right: 0px !important;
+padding-bottom: 0px !important;
+padding-left: 0px !important;
+}
+
+.footerTextArea{
+  margin-top: 0px !important;
+margin-right: 0px !important;
+margin-bottom: 31px !important;
+margin-left: 0px !important;
+text-align: center;
+display: flex;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+.leftFollow{
+  position: relative;
+height: 6px;
+flex-grow: 1;
+}
+
+.followIcons{
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactSection{
+  text-align: center;
+}
+
+.cookies{
+  background: radial-gradient(ellipse at 33% 50%, #f2df80, #f29544 133%);
+  margin-top:5rem;
+  height:200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:black;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .contactAndHours{
+    flex-direction: column;  
+  }
+  .contactSection{
+    margin-top:3rem;
+  }
 }

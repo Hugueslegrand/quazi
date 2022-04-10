@@ -20,7 +20,7 @@ type Anchor = "Menu";
 
 export default function SwipeableTemporaryDrawer() {
   const { t, i18n } = useTranslation();
-  const { index, setIndex } = useContext(ThemeContext);
+  const { langIndex, setLangIndex } = useContext(ThemeContext);
 
   const options = [
     {
@@ -65,20 +65,20 @@ export default function SwipeableTemporaryDrawer() {
       <section style={{ height: "25%" }}>
         <SwitchSelector
           options={options}
-          initialSelectedIndex={index}
+          initialSelectedIndex={langIndex}
           fontColor={"black"}
           selectedBackgroundColor="#D3472C"
           backgroundColor="transparant"
           onChange={(language: any) => {
             i18n.changeLanguage(language);
             if (language === "en") {
-              setIndex(0);
+              setLangIndex(0);
             }
             if (language === "nl") {
-              setIndex(1);
+              setLangIndex(1);
             }
             if (language === "fr") {
-              setIndex(2);
+              setLangIndex(2);
             }
           }}
         />
@@ -86,14 +86,14 @@ export default function SwipeableTemporaryDrawer() {
       <Divider />
       <Divider />
       <Divider />
-      <Divider />
-      <List>
-        {[t("Home"), t("Services"), t("About"), t("Contacts")].map(
+      <Divider /> 
+      <List>      
+        {[t("Home"), t("HairPieces"), t("Salon"), t("Prices"), t("Inspiration"), t("Consult"), t("Appointment")].map(
           (text, index) => (
             <Link className={styles.nav_link} to={`/${text}`}>
               <ListItem button key={text}>
                 <ListItemIcon></ListItemIcon>
-                <ListItemText primary={text} />
+                <ListItemText className={styles.listItemText} primary={text} />
               </ListItem>
             </Link>
           )

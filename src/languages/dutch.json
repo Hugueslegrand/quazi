@@ -1,6 +1,13 @@
 {
     "translation":{
         "Home":"Home",
+        "HairExtensions":"Haar Extensies",
+        "HairPieces":"Haarwerken",
+        "Salon":"Salon",
+        "Prices":"Tarieven",
+        "Inspiration":"Inspiratie",
+        "Consult":"Gratis consult",
+        "Appointment":"Maak een afspraak",
         "Services":"Diensten",
         "Gallery":"Galerij",
         "About":"Over",
@@ -24,6 +31,17 @@
         "ReadMore":"Lees meer",
         "Audience":"Voor vrouwen, mannen en kinderen",
         "Sent":"Uw bericht is verzonden",
-        "Examples":"Enkele voorbeelden"
+        "Examples":"Enkele voorbeelden",
+        "Openings":"OPENINGSTIJDEN",
+        "Monday":"Maandag",
+        "Tuesday":"Dinsdag",
+        "Wednesday":"Woensdag",
+        "Thursday":"Donderdag",
+        "Friday":"Vrijdag",
+        "Saturday":"Zaterdag",
+        "Sunday":"Zondag",
+        "Closed":"Gesloten",
+        "Follow":"Volg ons",
+        "Cookie":"Cookie – Privacyverklaring"
     }
 }

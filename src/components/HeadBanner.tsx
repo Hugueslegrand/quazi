@@ -10,7 +10,7 @@ const HeadBanner =()=>{
         <header className={styles.header}>
               <div className={styles.stars}>
               
-      <div className={styles.starb}></div>
+      <div className={styles.starb}> </div>
       <div className={styles.stara}></div>
     </div>
     <div className={styles.title}>

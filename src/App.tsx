@@ -14,14 +14,14 @@ import Coloringpage from './pages/Coloringpage';
 import Straightenpage from './pages/Straightenpage';
 import Keratinpage from './pages/Keratinpage';
 
-export const ThemeContext = React.createContext({index:0, setIndex:(index:number)=> {}});
+export const ThemeContext = React.createContext({langIndex:0, setLangIndex:(langIndex:number)=> {}});
 
 function App() {
-  const [index,setIndex] =useState<number>(0);
+  const [langIndex,setLangIndex] =useState<number>(0);
  
   const {t,i18n}= useTranslation();
   return (
-    <ThemeContext.Provider value={{index:index , setIndex: setIndex}}>
+    <ThemeContext.Provider value={{langIndex:langIndex , setLangIndex: setLangIndex}}>
     <Router>
     <Switch>
 
@@ -45,7 +45,7 @@ function App() {
       <Services/>
       </Route>
     
-      <Route path={`/${t("Contacts")}`}>
+      <Route path={`/${t("Appointment")}`}>
       <Contactpage/>
       </Route>
 

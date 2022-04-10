@@ -1,0 +1,44 @@
+.noDisplay{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    background-image: -webkit-linear-gradient(0deg, #D3472C 0%,   #D3472C 100%);
+    align-items: center;
+    position:fixed;
+    color: #f2df80;
+    border-style: solid;
+    
+  
+    width:100%;
+    z-index:200;
+   
+}
+.upperBanner{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    background-image: -webkit-linear-gradient(0deg, #D3472C 0%,   #D3472C 100%);
+   
+}   
+
+.language{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    color:white
+}
+
+.contactsInfo{
+display:flex;
+flex-direction:row;
+}
+.contactsInfo span{
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    text-shadow: none;
+}
+@media screen and (max-width: 800px) {
+    .contactsInfo span{
+        font-size: 0.65rem;
+    }
+}

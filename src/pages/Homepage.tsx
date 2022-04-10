@@ -14,6 +14,8 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 import quazi from '../assets/quazi.jpg';
 import { useTranslation } from 'react-i18next';
 import sliderImage from "../components/home/SliderImage";
+import CookieConsent, { Cookies } from "react-cookie-consent";
+
 
 
 const Homepage=()=>{
@@ -31,19 +33,29 @@ return(
       
       
            
-        
+      <CookieConsent  location="bottom">This website uses cookies to enhance the user experience.</CookieConsent>
         <section className={styles.content}>
             <ScrollToTop smooth color='white' style={{backgroundColor: '#f2df80  '}}/>
         <header>
             <Header/>
         </header>    
         <main>
-                <section className={styles.styled}>
+        <section className={styles.sliderBody}>
+                    <section className={styles.slider}>
+                        <section className={styles.sliderTrack}>
+                            {sliderImage.map((slide:any, index:number) =>
+                                <section className={styles.slide}>
+                                    
+                                        <img style={{height:'100%',width:'100%'}} src={slide.urls} alt={slide.title} />
+                                    
+                                </section>
 
-            </section>
-            <section className={styles.homeBanner}>
-            
-            </section>
+                            )}
+
+                        </section>
+
+                    </section>
+                    </section> 
             <section className={styles.styled}>
 
                 <h1 style={{color: '#d32c65'}}>{[t("Provide")]}</h1>
@@ -139,27 +151,16 @@ return(
               </CardActions>
               </Card>
 
-            
+            </section>
+            <section className={styles.appointment}>
+            <Link className={styles.link} style={{textDecoration:'none'}}  to={`/${t("Contacts")}`}>
+            <Button variant="outlined">{t("Appointment")}</Button>
+            </Link>
             </section>
 
-            <section className={styles.sliderBody}>
-                    <section className={styles.slider}>
-                        <section className={styles.sliderTrack}>
-                            {sliderImage.map((slide:any, index:number) =>
-                                <section className={styles.slide}>
-                                    
-                                        <img style={{height:'100%',width:'100%'}} src={slide.urls} alt={slide.title} />
-                                    
-                                </section>
-
-                            )}
-
-                        </section>
-
-                    </section>
-                    </section> 
+           
         </main>
-     
+
         <Footer/>
         </section>
         

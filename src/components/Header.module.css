@@ -1,6 +1,7 @@
 body{
     font-family:papyrus,fantasy;
 }
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -10,10 +11,9 @@ body{
     color: #f2df80;
     border-style: solid;
     padding: 2rem;    
-    transition:2s;
-  
-    
-    height: 25px;
+   
+   
+    height: 20px;
    
 }
 .fixed{
@@ -29,9 +29,40 @@ body{
     height: 25px;
     width:100%;
     z-index:200;
-    opacity: 0.8;
+    opacity: 1;
+    margin-top:30px;
 }
 
+.nav2 {
+    display: flex;
+    justify-content: space-between;
+     flex-direction:row;
+    background-image: radial-gradient(ellipse at 33% 50%, #f2df80, #f29544 133%);
+    align-items: center;
+    color: #f2df80;
+    border-style: solid;
+    padding: 2rem;    
+   
+
+    height: 20px;
+   
+}
+.fixed2{
+    display: flex;
+    justify-content: space-between;
+     flex-direction:row;
+    background-image: radial-gradient(ellipse at 33% 50%, #f2df80, #f29544 133%);
+    align-items: center;
+    position:fixed;
+    color: #f2df80;
+    border-style: solid;
+    padding: 2rem;    
+    height: 25px;
+    width:100%;
+    z-index:200;
+    opacity: 1;
+ margin-top:30px;
+}
 
 .nav_logo {
     
@@ -50,12 +81,17 @@ body{
     padding: 0;
     list-style: none;
     margin: 0;
+    flex-wrap: wrap;
 }
-
+.nav_list li{
+    margin-right:2rem;
+    font-family: BrandonGrotesque-Bold;
+}
 .nav_item {
     margin-left: 2rem;
     margin-bottom: 0;
     display: list-item;
+   
 }
 
 .nav_link {
@@ -63,16 +99,37 @@ body{
     color: black;
     font-weight: 500;
     text-decoration: none;
-    font-size:1.3rem;
+    font-size:1rem;
+    text-transform: uppercase;
+    
 }
 .nav_link:hover{
     color: #D3472C;
-    font-size: 2rem;
+    font-size: 1.1rem;
 }
 
-@media screen and (max-width: 800px) {
-   
-    
+.listItemText span{
+   color:black;
+    text-shadow:none;
+}
+
+@media screen and (max-width: 799px) {
+    .nav2{
+     display: none;
+    }
+ 
+     .fixed2{
+         display: none;
+     }
+   }
+@media screen and (min-width: 799px) {
+   .nav{
+    display: none;
+   }
+
+    .fixed{
+        display: none;
+    }
   }
   @media screen and (max-width: 1200px) {
     .nav_logo {
@@ -81,4 +138,17 @@ body{
         filter:grayscale(0);
     }
     
+    .nav_link {
+        transition: 0.5s;
+        color: black;
+        font-weight: 500;
+        text-decoration: none;
+        font-size:0.9rem;
+        text-transform: uppercase;
+        
+    }
+    .nav_link:hover{
+        color: #D3472C;
+        font-size: 0.95rem;
+    }
   }
